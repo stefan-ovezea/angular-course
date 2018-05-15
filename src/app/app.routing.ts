@@ -9,6 +9,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 const routes: Routes =[
@@ -18,6 +19,7 @@ const routes: Routes =[
     { path: 'structuraldirectives', component: StructuralDirectivesComponent },
     { path: 'attributedirectives', component: AttributeDirectivesComponent },
     { path: 'pipes', component: PipesComponent },
+    { path: 'forms', component: FormsComponent },
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 

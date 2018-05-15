@@ -1,7 +1,7 @@
 // Angular imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
@@ -16,6 +16,7 @@ import { IconsComponent } from './icons/icons.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
+import { FormsComponent } from './forms/forms.component';
 
 // App Directives
 import { HighlightDirective } from './attribute-directives/highlight.directive';
@@ -38,10 +39,12 @@ import { ExponentialPipe } from './pipes/exponential.pipe';
     StructuralDirectivesComponent,
     AttributeDirectivesComponent,
     PipesComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     ComponentsModule,
     RouterModule,
