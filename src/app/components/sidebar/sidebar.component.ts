@@ -6,7 +6,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'structuraldirectives', title: 'Structural Directives',  icon: 'bubble_chart', class: '' },
     { path: 'attributedirectives', title: 'Attribute Directives',  icon: 'build', class: '' },
     { path: 'pipes', title: 'Pipes',  icon: 'play_for_work', class: '' },
-    { path: 'forms', title: 'Forms',  icon: 'play_for_work', class: '' }
+    { path: 'forms', title: 'Forms',  icon: 'library_books', class: '' }
 ];
 
 @Component({
