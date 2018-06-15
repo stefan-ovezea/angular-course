@@ -1,23 +1,23 @@
 import { Directive, ElementRef, Input, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight]'
+  // tslint:disable-next-line:directive-selector
+  selector: '[highlight]'
 })
 export class HighlightDirective {
+  @Input('highlight') highlight: string;
 
   constructor(private el: ElementRef) { }
-  
-    @Input('appHighlight') highlightColor: string;
-  
+
     @HostListener('mouseenter') onMouseEnter() {
-      this.highlight(this.highlightColor || 'red');
+      this.highlightElement(this.highlight || 'red');
     }
-  
+
     @HostListener('mouseleave') onMouseLeave() {
-      this.highlight(null);
+      this.highlightElement(null);
     }
-  
-    private highlight(color: string) {
+
+    private highlightElement(color: string) {
       this.el.nativeElement.style.backgroundColor = color;
     }
 

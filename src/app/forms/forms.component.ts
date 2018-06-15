@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
     styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent implements OnInit {
-    public formGroup: FormGroup = new FormGroup({});
+    public reactiveFormGroup: FormGroup = new FormGroup({});
     constructor() { }
 
     ngOnInit(): void {

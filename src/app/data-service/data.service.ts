@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
   constructor() { }
-  
+
   getUsers() {
-    let uri: string = 'https://jsonplaceholder.typicode.com/users';
+    const uri = 'https://jsonplaceholder.typicode.com/users';
 
   }
 
