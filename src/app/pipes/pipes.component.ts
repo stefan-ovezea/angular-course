@@ -15,7 +15,7 @@ export class PipesComponent implements OnInit {
 
   exponentialExample: number;
   exponent: number;
-  
+
   constructor() { }
 
   ngOnInit() {
