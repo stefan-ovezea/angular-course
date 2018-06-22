@@ -27,6 +27,7 @@ import { PipesComponent } from './pipes/pipes.component';
 
 // App Pipes
 import { ExponentialPipe } from './pipes/exponential.pipe';
+import { ChildComponent } from './dashboard/child/child.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ExponentialPipe } from './pipes/exponential.pipe';
     StructuralDirectivesComponent,
     AttributeDirectivesComponent,
     PipesComponent,
-    FormsComponent
+    FormsComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
