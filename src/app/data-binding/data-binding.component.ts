@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  properyBindingText: string = 'Property bound example text';
-  eventBindingText: string = '';
-  twoWayBindingText: string = '';
+  properyBindingText = 'Property bound example text';
+  eventBindingText = '';
+  twoWayBindingText = '';
 
-  stringInterpolationText: string = 'String interpolated example text';
-  
+  stringInterpolationText = 'String interpolated example text';
+
   constructor() { }
 
   ngOnInit() {
