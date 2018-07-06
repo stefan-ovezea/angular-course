@@ -11,7 +11,7 @@ export class DataBindingComponent implements OnInit {
   eventBindingText = '';
   twoWayBindingText = '';
 
-  stringInterpolationText = 'String interpolated example text';
+  templateBindingText = 'Template binding example text';
 
   constructor() { }
 
