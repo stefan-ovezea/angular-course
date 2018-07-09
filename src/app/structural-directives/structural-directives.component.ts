@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuralDirectivesComponent implements OnInit {
 
+  showText = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleText() {
+    this.showText = !this.showText;
   }
 
 }
